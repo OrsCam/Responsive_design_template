@@ -31,7 +31,7 @@ img {
 }
 
 .subtitles {
-    font-size: 8px;
+    font-size: 11px;
 }
 
 .rbarrow {
@@ -44,14 +44,15 @@ img {
     font-size: 11px;
     text-align: center;
     line-height: 4;
-    width: 70%;
-    height: 60px;
+    width: 390px;
+    height: 90px;
     color: #FFFFFF;
 }
 
 .arrow {
     background-color: #BC3184;
-    width: 30%;
+    width: 220px;
+    height: 90px;
     display: flex;
     flex-direction: flex-end;
 }
@@ -66,7 +67,8 @@ img {
 .middlearrow {
     background-color: #5A0FA0;
     width: 100%;
-    height: 220px;
+    height: 300px;
+    padding: 10%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -92,4 +94,32 @@ img {
 .lastbox h1 {
     color: teal;
     font-size: 14spx;
+}
+
+@media (min-width: 640px) {
+    .arrow {
+        background-color: #BC3184;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        flex-direction: flex-end;
+    }
+
+    .robinwood {
+        background-color: #27212D;
+        font-size: 11px;
+        text-align: center;
+        line-height: 4;
+        width: 550px;
+        height: 120px;
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 980px) {
+
+    .screens {
+        display: flex;
+        flex-direction: row;
+    }
 }

@@ -37,6 +37,7 @@ img {
 .rbarrow {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .robinwood {
@@ -44,15 +45,15 @@ img {
     font-size: 11px;
     text-align: center;
     line-height: 4;
-    width: 390px;
-    height: 90px;
+    width: 70%; /*390px - 200vw*/
+    height: 120px;
     color: #FFFFFF;
 }
 
 .arrow {
     background-color: #BC3184;
-    width: 220px;
-    height: 90px;
+    width: 30%; /*220px*/
+    height: 120px;
     display: flex;
     flex-direction: flex-end;
 }
@@ -60,7 +61,7 @@ img {
 .arrow img {
     width: 30px;
     height: 30px;
-    margin: auto;
+    margin: auto;   
     justify-content: center;
 }
 
@@ -68,7 +69,7 @@ img {
     background-color: #5A0FA0;
     width: 100%;
     height: 300px;
-    padding: 10%;
+    padding: auto;
     margin: auto;
     display: flex;
     align-items: center;
@@ -96,13 +97,118 @@ img {
     font-size: 14spx;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 980px) {
+    .rbarrow {
+        width: 100%;
+    }
+    
     .arrow {
         background-color: #BC3184;
-        width: 120px;
-        height: 120px;
         display: flex;
         flex-direction: flex-end;
+        width: 25%;
+    }
+
+    /*  width: 120px;
+        height: 120px;
+        */
+
+    .robinwood {
+        background-color: #27212D;
+        font-size: 11px;
+        text-align: center;
+        line-height: 4;
+        width: 75%; /* 550pw */
+        height: 120px;
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1024px) {
+
+    .screens {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .bluebox {
+        width: 100%;
+
+    }
+
+    .rbarrow {
+        width: 100%;
+    }
+
+    /* .robinwood {
+        background-color: #27212D;
+        font-size: 11px;
+        text-align: center;
+        line-height: 4;
+        width: 870px;
+        height: 120px;
+        color: #FFFFFF;
+    } */
+
+    .arrow {
+        background-color: #BC3184;
+        display: flex;
+        flex-direction: flex-end;
+        width: 18%;
+    }
+
+    /*  width: 120px;
+        height: 120px;
+        */
+
+    .robinwood {
+        background-color: #27212D;
+        font-size: 11px;
+        text-align: center;
+        line-height: 4;
+        width: 82%; /* 550pw */
+        height: 120px;
+        color: #FFFFFF;
+    }
+
+    .bridge, .woman, .middlearrow, img {
+        width: 33%;
+        height: 33%;
+    }
+
+    .middlearrow {
+        background-color: #5A0FA0;
+        width: 100%;
+        height: 288px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+
+   
+}
+
+@media (min-width: 1024px) {
+
+    .screens {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .bluebox {
+        width: 100%;
+
     }
 
     .robinwood {
@@ -110,16 +216,37 @@ img {
         font-size: 11px;
         text-align: center;
         line-height: 4;
-        width: 550px;
+        width: 85%; /* 870pw */
         height: 120px;
         color: #FFFFFF;
     }
-}
 
-@media (min-width: 980px) {
-
-    .screens {
-        display: flex;
-        flex-direction: row;
+    .bridge, .woman, .middlearrow, img {
+        width: 33%;
+        height: 33%;
     }
+
+    .middlearrow {
+        background-color: #5A0FA0;
+        width: 100%;
+        height: 28.3vw;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .arrow {
+        background-color: #BC3184;
+        width: 15%;
+        display: flex;
+        flex-direction: flex-end;
+    }
+
+    /*  width: 220px;
+        height: 120px;
+        */
+
+
+   
 }
